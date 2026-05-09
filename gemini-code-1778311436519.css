@@ -1,0 +1,108 @@
+/* Paleta de colores basada en tu imagen */
+:root {
+    --magenta: #d81b60;
+    --morado: #6a1b9a;
+    --azul: #1e88e5;
+    --amarillo: #ffeb3b;
+    --verde-wa: #25d366;
+    --blanco: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, var(--magenta), var(--morado), var(--azul));
+    background-attachment: fixed;
+    color: var(--blanco);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.btn-nav-wa {
+    background: var(--verde-wa);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.hero h1 span {
+    color: var(--amarillo);
+}
+
+.hero-btns {
+    margin-top: 30px;
+}
+
+.btn-wa {
+    background: var(--verde-wa);
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+.btn-menu {
+    background: var(--amarillo);
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Tarjetas de Menú */
+.menu-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.menu-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.menu-card h3 {
+    color: var(--magenta);
+}
+
+/* Footer */
+.footer {
+    background: rgba(0,0,0,0.4);
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
